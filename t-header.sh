@@ -83,7 +83,7 @@ if [ -e $PREFIX/share/figlet/Remo773.flf ]; then
 	echo -e "\e[1;34m[*] \033[32mRemo773.flf figlet font is present\033[0m";
 	sleep 4
 else
-wget https://raw.githubusercontent.com/remo7777/REMO773/master/Remo773.flf &> /dev/null;
+wget https://hub.mwm.moe/https://raw.githubusercontent.com/remo7777/REMO773/master/Remo773.flf &> /dev/null;
 sleep 3
 cp Remo773.flf $PREFIX/share/figlet/Remo773.flf;
 cp ASCII-Shadow.flf $PREFIX/share/figlet/ASCII-Shadow.flf;
@@ -271,7 +271,7 @@ mkdir -p ~/.plugins/zsh-syntax-highlighting
 
 while [ $zshau = 0 ];
 do
-	( git clone --depth 1 https://github.com/zsh-users/zsh-autosuggestions.git ~/.plugins/zsh-autosuggestions; echo "source ~/.plugins/zsh-autosuggestions/zsh-autosuggestions.zsh" >> $HOME/.zshrc; ) &> /dev/null & spin
+	( git clone --depth 1 https://hub.mwm.moe/https://github.com/zsh-users/zsh-autosuggestions.git ~/.plugins/zsh-autosuggestions; echo "source ~/.plugins/zsh-autosuggestions/zsh-autosuggestions.zsh" >> $HOME/.zshrc; ) &> /dev/null & spin
 	if [ -d $HOME/.plugins/zsh-autosuggestions ];
 then
 	zshau=1
@@ -289,7 +289,7 @@ zshsyx=0
 while [ $zshsyx = 0 ];
 do
 echo -e "\e[1;34m[*] \e[32mZsh-syntax-highlighter setup....\e[0m";
-	( git clone --depth 1 https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.plugins/zsh-syntax-highlighting; echo "source ~/.plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> $HOME/.zshrc; ) &> /dev/null & spin
+	( git clone --depth 1 https://hub.mwm.moe/https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.plugins/zsh-syntax-highlighting; echo "source ~/.plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> $HOME/.zshrc; ) &> /dev/null & spin
 
 if [ -d $HOME/.plugins/zsh-syntax-highlighting ];then
 	zshsyx=1
